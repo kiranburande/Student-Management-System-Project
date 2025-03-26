@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Student</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      font-size: 16px;
+      margin-top: 10px;
+      display: block;
+      color: #555;
+    }
+
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 15px;
+      font-size: 16px;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    input[type="submit"]:active {
+      background-color: #388e3c;
+    }
+
+    /* Optional: Add responsive design */
+    @media screen and (max-width: 600px) {
+      .form-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <form action="addstudent" method="post">
+    RollNo:<input type="text" name="rollno"><br>
+    Name:<input type="text" name="name"><br>
+	Course:
+        <select id="course" name="course">
+            <option value="java">Java</option>
+        </select><br>
+	Marks of CoreJava:<input type="text" name="cjava"><br>
+	Marks of AdvJava:<input type="text" name="ajava"><br>
+	Marks of UI:<input type="text" name="ui"><br>
+	Marks of DB:<input type="text" name="db"><br>
+	Marks of Tools:<input type="text" name="tools"><br>
+	<input type="submit" value="AddStudent">
+    
+    </form>
+</body>
+</html>

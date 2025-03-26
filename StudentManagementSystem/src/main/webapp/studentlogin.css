@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for the page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Form container styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Styling for input fields */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 85%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Input field focus styling */
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Page title styling */
+h1 {
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
